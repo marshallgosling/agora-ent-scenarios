@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/voice_bg_rect_top_radius20_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/muContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/voice_bg_rect_top_radius20_gradient_white"
+            app:layout_constraintBottom_toBottomOf="@+id/mtmBottomSheetTitle"
+            app:layout_constraintTop_toTopOf="@+id/ivmuBottomSheetTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivmuBottomSheetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/voice_icon_room_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtmBottomSheetTitle"
+            style="@style/voice_bottom_sheet_title_style"
+            android:text="@string/voice_chatroom_music_mixer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivmuBottomSheetTitle" />
+
+        <!--  Bot Settings  -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtMusicSelectionTitle"
+            style="@style/voice_bottom_sheet_subtitle_style"
+            android:text="@string/voice_chatroom_music_selection"
+            android:textColor="#5C6BC0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtmBottomSheetTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mtMusicIcon1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/voice_icon_room_setting_volume"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/mtMusic1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtMusic1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtMusic1"
+            style="@style/voice_bottom_sheet_text_style"
+            android:layout_marginStart="52dp"
+            android:width="300dp"
+            android:text="@string/voice_chatroom_music_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtMusicSelectionTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mtMusicIcon2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/voice_icon_room_setting_volume"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/mtMusic2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtMusic2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtMusic2"
+            style="@style/voice_bottom_sheet_text_style"
+            android:layout_marginStart="52dp"
+            android:width="300dp"
+            android:text="@string/voice_chatroom_music_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtMusic1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mtMusicIcon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/voice_icon_room_setting_volume"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/mtMusic3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtMusic3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtMusic3"
+            style="@style/voice_bottom_sheet_text_style"
+            android:layout_marginStart="52dp"
+            android:width="300dp"
+            android:text="@string/voice_chatroom_music_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtMusic2" />
+
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/voice_bottom_sheet_divider_style"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtMusic3" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/voice_icon_room_setting_noise_suppression"
+            app:layout_constraintBottom_toBottomOf="@+id/mtAgoraMixerVolume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtAgoraMixerVolume" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtAgoraMixerVolume"
+            style="@style/voice_bottom_sheet_text_style"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/voice_chatroom_music_volume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtMusic3" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/pbAgoraMixerVolume"
+            style="@style/voice_bottom_sheet_progress"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/voice_chatroom_music_volume"
+            android:thumb="@drawable/voice_icon_progress_thumb20"
+            app:layout_constraintBottom_toBottomOf="@+id/mtAgoraMixerVolume"
+            app:layout_constraintEnd_toStartOf="@+id/mtAgoraMusicVolumeValue"
+            app:layout_constraintStart_toEndOf="@+id/mtAgoraMixerVolume"
+            app:layout_constraintTop_toTopOf="@+id/mtAgoraMixerVolume"
+            tools:progress="50" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtAgoraMusicVolumeValue"
+            style="@style/voice_bottom_sheet_right_text_style"
+            android:paddingStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mtAgoraMixerVolume"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtAgoraMixerVolume"
+            tools:text="50" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

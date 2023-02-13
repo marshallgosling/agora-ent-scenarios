@@ -628,7 +628,7 @@ public abstract class BaseMusicPlayerOld extends IRtcEngineEventHandler implemen
 
     }
 
-    @Override
+    //@Override
     public void onCompleted() {
         onMusicCompleted();
     }

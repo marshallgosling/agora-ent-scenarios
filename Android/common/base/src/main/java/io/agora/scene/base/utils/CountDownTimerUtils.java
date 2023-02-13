@@ -31,6 +31,6 @@ public class CountDownTimerUtils extends CountDownTimer {
     @Override
     public void onFinish() {
         mTvTime.setClickable(true);
-        mTvTime.setText("重新获取");
+        mTvTime.setText("Resend");
     }
 }

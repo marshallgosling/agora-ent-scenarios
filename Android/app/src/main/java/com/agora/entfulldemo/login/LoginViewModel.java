@@ -72,7 +72,7 @@ public class LoginViewModel extends BaseRequestViewModel {
 
                     @Override
                     public void onSuccess(BaseResponse<String> stringBaseResponse) {
-                        ToastUtils.showToast("验证码发送成功");
+                        ToastUtils.showToast("Send OTP successfully");
                     }
 
                     @Override

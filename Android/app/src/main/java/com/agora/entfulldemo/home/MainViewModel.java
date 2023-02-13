@@ -89,7 +89,7 @@ public class MainViewModel extends BaseRequestViewModel {
 
                     @Override
                     public void onSuccess(BaseResponse<User> data) {
-                        ToastUtils.showToast("修改成功");
+                        ToastUtils.showToast("Success");
                         getISingleCallback().onSingleCallback(KtvConstant.CALLBACK_TYPE_USER_INFO_CHANGE, null);
                         if (!TextUtils.isEmpty(name)) {
                             UserManager.getInstance().getUser().name = name;
